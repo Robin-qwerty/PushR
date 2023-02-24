@@ -46,13 +46,20 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label
-                                    Grid.Column="0"
-                                    Text="{Binding Message}"
-                                    FontSize="20"
-                                    TextColor="white"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"/>
+                                    <Frame
+                                        CornerRadius="10"
+                                        Margin="5"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="DarkBlue"
+                                        Padding="5">
+                                        <Label
+                                            Grid.Column="0"
+                                            Text="{Binding Message}"
+                                            FontSize="20"
+                                            TextColor="white"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"/>
+                                    </Frame>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>
