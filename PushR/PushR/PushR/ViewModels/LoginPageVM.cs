@@ -73,7 +73,14 @@ namespace PushR.ViewModels
                 try
                 {
                     await SecureStorage.SetAsync("UserId", result);
-                    App.Current.MainPage = new UserListPage();
+                    if (result == null || result == "")
+                    {
+                        await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech", "OK");
+                    }
+                    else
+                    {
+                        App.Current.MainPage = new UserListPage();
+                    }
                 }
                 catch (Exception ex)
                 {
