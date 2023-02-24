@@ -1,0 +1,19 @@
+check id:
+	
+
+registratie scherm:
+	naam - password - nickname
+
+database:
+	-id
+	-naam
+	-password
+	-nickname
+	-token
+	-archive
+
+php script:
+	check of nickname al bestaat
+	insert database
+
+var responseString = string.Empty; var values = new Dictionary { { function, txtJSON } }; // // Urlencode prepare for sending var content = new FormUrlEncodedContent(values); try { // POST to script var post = await client.PostAsync("https://pwx.nl/kp/knotploeg.php", content); // recieve answer responseString = await post.Content.ReadAsStringAsync(); }

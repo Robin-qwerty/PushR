@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PushR.Views.ChatPage">
+    <Grid
+        RowDefinitions="*, auto"
+        Margin="10">
+        <Grid
+            RowDefinitions="auto, auto">
+            <Frame
+                HeightRequest="10"
+                BackgroundColor="Transparent"
+                BorderColor="White">
+                <Button
+                    Text="back"
+                    Command="{Binding BackCmd}"/>
+            </Frame>
+        </Grid>
+        <Grid
+            RowDefinitions="auto, auto">
+            <Frame
+                BorderColor="DarkGray"
+                BackgroundColor="Transparent"
+                CornerRadius="10"
+                VerticalOptions="Center"
+                Margin="10"
+                Padding="10">
+                <ListView
+                    VerticalOptions="FillAndExpand"
+                    ItemsSource="{Binding UserChatList}"
+                    HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label
+                                    Grid.Column="0"
+                                    Text="{Binding Message}"
+                                    FontSize="25"
+                                    TextColor="white"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
+        </Grid>
+        
+        <StackLayout 
+            Grid.Row="1"
+            Orientation="Horizontal">
+            <Entry 
+                Text="{Binding Message}"
+                HorizontalOptions="FillAndExpand"/>
+            <Button
+                Text="Send"
+                Command="{Binding SendMsgCommand}"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
