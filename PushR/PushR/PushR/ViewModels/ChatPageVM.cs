@@ -9,13 +9,27 @@ namespace PushR.ViewModels
     {
         UserChatModel myModel;
         public ObservableCollection<UserChatModel> UserChatList { get; set; }
-
+        public Command BackCmd { get; private set; }
+        public Command SendMessageCmd { get; private set; }
 
         public ChatPageVM(UserChatModel chatModel)
         {
             UserChatList = new ObservableCollection<UserChatModel>();
 
             myModel= chatModel;
+
+            BackCmd = new Command(ExecuteBackCmd);
+            SendMessageCmd = new Command(ExecuteSendMessageCmd);
+        }
+
+        public void ExecuteBackCmd()
+        {
+            App.Current.MainPage = new UserListPage();
+        }
+
+        public void ExecuteSendMessageCmd()
+        {
+            //send the message
         }
 
         public async void GetData()

@@ -1,6 +1,7 @@
 ﻿using PushR.Models;
 using PushR.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 using static Android.App.Assist.AssistStructure;
 
@@ -13,7 +14,8 @@ namespace PushR.Views
 
         public ChatPage(UserChatModel model)
 		{
-			InitializeComponent();
+            Xamarin.Forms.Application.Current.On<Xamarin.Forms.PlatformConfiguration.Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
+            InitializeComponent();
             viewModel = new ChatPageVM(model);
             viewModel.GetData();
 

@@ -114,8 +114,12 @@
 		 $json_array = json_encode($arr);
 		 echo $json_array;
 		}
+		elseif ($result -> num_rows == 0)
+		{
+			echo "NMSG";
+		}
 		else {
-			echo "nok";
+			echo "NOK";
 		}
 	}
 

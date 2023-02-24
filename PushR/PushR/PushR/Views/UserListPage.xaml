@@ -8,7 +8,7 @@
         <Button
             Text="Logout"
             Margin="100,25"
-            Command="{Binding UserListCmd}"/>
+            Command="{Binding LogoutCmd}"/>
         <Frame
             BorderColor="White"
             BackgroundColor="Transparent"

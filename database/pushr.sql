@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 21 feb 2023 om 13:11
+-- Gegenereerd op: 24 feb 2023 om 10:50
 -- Serverversie: 10.4.27-MariaDB
 -- PHP-versie: 8.2.0
 
@@ -24,28 +24,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `chats`
---
-
-CREATE TABLE `chats` (
-  `id` int(255) NOT NULL,
-  `user1_id` int(255) NOT NULL,
-  `user2_id` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Tabelstructuur voor tabel `messages`
 --
 
 CREATE TABLE `messages` (
   `id` int(255) NOT NULL,
-  `chatid` int(255) NOT NULL,
-  `senduser_id` int(255) NOT NULL,
+  `from_id` int(255) NOT NULL,
   `message` varchar(1000) NOT NULL,
-  `receiveuser_id` int(255) NOT NULL
+  `to_id` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `messages`
+--
+
+INSERT INTO `messages` (`id`, `from_id`, `message`, `to_id`) VALUES
+(1, 38, 'leuk he', 1),
+(2, 1, 'ja echt leuk', 38);
 
 -- --------------------------------------------------------
 
@@ -55,8 +50,8 @@ CREATE TABLE `messages` (
 
 CREATE TABLE `requests` (
   `id` int(255) NOT NULL,
-  `requestinguser_id` int(255) NOT NULL,
-  `user_id` int(255) NOT NULL,
+  `sender_id` int(255) NOT NULL,
+  `receiver_id` int(255) NOT NULL,
   `accepted` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -80,43 +75,31 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `password`, `nickname`, `token`, `archive`) VALUES
-(1, 'Robin', 'qwerty', 'robin2', NULL, 1),
-(2, 'test1', '1', 'test123', NULL, 1),
-(3, 'test2', '2', 'test123456\r\n                                           ', NULL, 1),
-(4, 'Robin2', 'adsfasdfsadf', 'asdgdas', NULL, 1),
-(5, 'Test', 'password', 'kerstman', NULL, 1),
-(16, 'Piet', '734442E33D8EFF4B48B62D603966BDB5', 'Piet', NULL, 1),
-(18, 'Egnwfn', 'D25AEE4702BC86C9EBDE8C220D5E25B9', 'Megnegnsfn', NULL, 1),
-(19, 'Sh d', '0246C0F814B8113F42299CF2F804DFB7', 'Rhmrhn.t', NULL, 1);
+(1, 'Robin', 'D8578EDF8458CE06FBC5BB76A58C5CA4', 'Robin', NULL, 0),
+(25, 'Paul', '6C63212AB48E8401EAF6B59B95D816A9', 'Paul', NULL, 0),
+(36, 'Tim', 'B15D47E99831EE63E3F47CF3D4478E9A', 'Tim', NULL, 0),
+(38, 'Jam', 'FA27EF3EF6570E32A79E74DECA7C1BC3', 'Jan', NULL, 0);
 
 --
 -- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexen voor tabel `chats`
---
-ALTER TABLE `chats`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `user1_id` (`user1_id`),
-  ADD KEY `user2_id` (`user2_id`);
-
---
 -- Indexen voor tabel `messages`
 --
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `senduser_id` (`senduser_id`),
-  ADD KEY `receiveuser_id` (`receiveuser_id`),
-  ADD KEY `chatid` (`chatid`);
+  ADD KEY `senduser_id` (`from_id`),
+  ADD KEY `receiveuser_id` (`to_id`);
 
 --
 -- Indexen voor tabel `requests`
 --
 ALTER TABLE `requests`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `requestinguser_id` (`requestinguser_id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD KEY `requestinguser_id` (`sender_id`),
+  ADD KEY `user_id` (`receiver_id`),
+  ADD KEY `id` (`id`);
 
 --
 -- Indexen voor tabel `users`
@@ -130,16 +113,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT voor een tabel `chats`
---
-ALTER TABLE `chats`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT voor een tabel `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT voor een tabel `requests`
@@ -151,33 +128,25 @@ ALTER TABLE `requests`
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
 --
 
 --
--- Beperkingen voor tabel `chats`
---
-ALTER TABLE `chats`
-  ADD CONSTRAINT `chats_ibfk_1` FOREIGN KEY (`user1_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `chats_ibfk_2` FOREIGN KEY (`user2_id`) REFERENCES `users` (`id`);
-
---
 -- Beperkingen voor tabel `messages`
 --
 ALTER TABLE `messages`
-  ADD CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`chatid`) REFERENCES `chats` (`id`),
-  ADD CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`senduser_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `messages_ibfk_3` FOREIGN KEY (`receiveuser_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `messages_ibfk_2` FOREIGN KEY (`from_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `messages_ibfk_3` FOREIGN KEY (`to_id`) REFERENCES `users` (`id`);
 
 --
 -- Beperkingen voor tabel `requests`
 --
 ALTER TABLE `requests`
-  ADD CONSTRAINT `requests_ibfk_1` FOREIGN KEY (`requestinguser_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `requests_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `requests_ibfk_1` FOREIGN KEY (`sender_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `requests_ibfk_2` FOREIGN KEY (`receiver_id`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

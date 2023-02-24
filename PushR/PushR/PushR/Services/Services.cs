@@ -47,7 +47,25 @@ namespace PushR.Services
 
             var json = JsonConvert.SerializeObject(model);
             var result = await apiCall.DoCall("UserChat", json);
-            users = JsonConvert.DeserializeObject<List<UserChatModel>>(result);
+            if (result == null || result == "NOK")
+            {
+                await App.Current.MainPage.DisplayAlert("Failed", "Something went wrong. try again later", "OK");
+            }
+            else if (result == "NMSG")
+            {
+                await App.Current.MainPage.DisplayAlert("Message", "No messages found", "OK");
+            }
+            else
+            {
+                try
+                {
+                    users = JsonConvert.DeserializeObject<List<UserChatModel>>(result);
+                }
+                catch (Exception)
+                {
+                    await App.Current.MainPage.DisplayAlert("Failed", "Something went wrong. try again later", "OK");
+                }
+            }
 
             return users;
         }

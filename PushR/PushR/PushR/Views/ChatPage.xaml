@@ -5,25 +5,34 @@
     <Grid
         RowDefinitions="*, auto"
         Margin="10">
-        <Grid
-            RowDefinitions="auto, auto">
+        <StackLayout>
             <Frame
-                HeightRequest="10"
                 BackgroundColor="Transparent"
-                BorderColor="White">
-                <Button
-                    Text="back"
-                    Command="{Binding BackCmd}"/>
+                BorderColor="White"
+                Margin="0"
+                Padding="10">
+                <StackLayout 
+                    Grid.Row="1"
+                    Orientation="Horizontal">
+                    <Button
+                        Text="back"
+                        HeightRequest="40"
+                        Command="{Binding BackCmd}"/>
+                    <Label
+                        FontSize="30"
+                        Text="{Binding NickName}"/>
+                </StackLayout>
             </Frame>
-        </Grid>
+        </StackLayout>
         <Grid
-            RowDefinitions="auto, auto">
+            RowDefinitions="auto, auto"
+            Margin="0,75,0,0">
             <Frame
                 BorderColor="DarkGray"
                 BackgroundColor="Transparent"
                 CornerRadius="10"
                 VerticalOptions="Center"
-                Margin="10"
+                Margin="0,0,0,0"
                 Padding="10">
                 <ListView
                     VerticalOptions="FillAndExpand"
@@ -40,7 +49,7 @@
                                     <Label
                                     Grid.Column="0"
                                     Text="{Binding Message}"
-                                    FontSize="25"
+                                    FontSize="20"
                                     TextColor="white"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"/>
@@ -56,11 +65,12 @@
             Grid.Row="1"
             Orientation="Horizontal">
             <Entry 
-                Text="{Binding Message}"
-                HorizontalOptions="FillAndExpand"/>
+                Text="{Binding SendMessage}"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Message"/>
             <Button
                 Text="Send"
-                Command="{Binding SendMsgCommand}"/>
+                Command="{Binding SendMessageCmd}"/>
         </StackLayout>
     </Grid>
 </ContentPage>
