@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using PushR.Models;
 using PushR.Views;
 using Xamarin.Forms;
@@ -43,6 +45,10 @@ namespace PushR.ViewModels
                 {
                     UserChatList.Add(user);
                 }
+            }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Failed", "Something went wrong. try again later", "OK");
             }
         }
     }

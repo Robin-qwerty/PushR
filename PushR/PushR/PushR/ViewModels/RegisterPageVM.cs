@@ -74,7 +74,8 @@ namespace PushR.ViewModels
             {
                 NickName = _nickname,
                 Name = _name,
-                Password = md5
+                Password = md5,
+                Token = await SecureStorage.GetAsync("token")
             };
             var result = await Services.Services.Register(model);
 

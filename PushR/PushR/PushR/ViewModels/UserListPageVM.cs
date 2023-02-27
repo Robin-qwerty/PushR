@@ -35,6 +35,10 @@ namespace PushR.ViewModels
                     UserList.Add(user);
                 }
             }
+            else
+            {
+                await App.Current.MainPage.DisplayAlert("Failed", "Something went wrong. try again later", "OK");
+            }
         }
     }
 }

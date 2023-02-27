@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PushR.converter"
              x:Class="PushR.Views.ChatPage">
+    <Page.Resources>
+        <local:IdToAlignmentConverter x:Key="IdToAlignmentConverterKey"></local:IdToAlignmentConverter>
+        <local:IdToBackgroundColer x:Key="IdToBackgroundColerKey"></local:IdToBackgroundColer>
+    </Page.Resources>
     <Grid
         RowDefinitions="*, auto"
         Margin="10">
@@ -44,21 +49,21 @@
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
                                     <Frame
-                                        CornerRadius="10"
-                                        Margin="5"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="DarkBlue"
-                                        Padding="5">
+                                        CornerRadius="30"
+                                        Grid.Column="0"
+                                        HorizontalOptions="{Binding From_Id, Converter={StaticResource IdToAlignmentConverterKey}}"
+                                        HasShadow="True"
+                                        Margin="0"
+                                        BackgroundColor="{Binding From_Id, Converter={StaticResource IdToBackgroundColerKey}}"
+                                        Padding="5"
+                                        MinimumWidthRequest="20">
                                         <Label
-                                            Grid.Column="0"
                                             Text="{Binding Message}"
-                                            FontSize="20"
-                                            TextColor="white"
-                                            HorizontalOptions="Center"
-                                            VerticalOptions="Center"/>
+                                            Margin="10"
+                                            TextColor="White"
+                                            LineBreakMode="WordWrap"/>
                                     </Frame>
                                 </Grid>
                             </ViewCell>

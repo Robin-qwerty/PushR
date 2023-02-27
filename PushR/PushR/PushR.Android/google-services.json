@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1079340158662",
+    "project_id": "pushr-8fc43",
+    "storage_bucket": "pushr-8fc43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079340158662:android:7fbd3d5b4a580aebb951c7",
+        "android_client_info": {
+          "package_name": "com.companyname.pushr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079340158662-g3hl13t1hj9i7bh105rdv8tf7o7th4h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx_L3E9ZwABlBKBK5a1e-mbgxJgEo8dCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079340158662-g3hl13t1hj9i7bh105rdv8tf7o7th4h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

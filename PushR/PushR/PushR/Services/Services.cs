@@ -69,5 +69,21 @@ namespace PushR.Services
 
             return users;
         }
+
+        public async static Task<string> TokenRefresh(string token)
+        {
+            UserModel model = new UserModel()
+            {
+                Token = token,
+                Id = await SecureStorage.GetAsync("id")
+            };
+
+            HandleApiCall apiCall = new HandleApiCall();
+
+            var json = JsonConvert.SerializeObject(model);
+            var result = await apiCall.DoCall("TokenRefresh", "");
+
+            return result;
+        }
     }
 }

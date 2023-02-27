@@ -1,8 +1,8 @@
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\PushR.deps.json
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\PushR.dll
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\PushR.pdb
-C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\obj\Debug\netstandard2.0\PushR.csproj.AssemblyReference.cache
 C:\xampp\htdocs\PushR\PushR\PushR\PushR\obj\Debug\netstandard2.0\PushR.GeneratedMSBuildEditorConfig.editorconfig
