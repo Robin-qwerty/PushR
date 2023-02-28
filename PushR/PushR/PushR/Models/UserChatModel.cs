@@ -10,6 +10,5 @@ namespace PushR.Models
         public string From_Id { get; set; }
         public string Message { get; set; }
         public string To_Id { get; set; }
-        public bool IsOwner { get; set; }
     }
 }

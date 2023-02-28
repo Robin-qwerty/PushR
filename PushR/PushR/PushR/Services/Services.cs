@@ -85,5 +85,16 @@ namespace PushR.Services
 
             return result;
         }
+
+        public async static Task<string> SendMessage(UserChatModel model)
+        {
+            
+            HandleApiCall apiCall = new HandleApiCall();
+
+            var json = JsonConvert.SerializeObject(model);
+            var result = await apiCall.DoCall("SendMessage", json);
+
+            return result;
+        }
     }
 }
