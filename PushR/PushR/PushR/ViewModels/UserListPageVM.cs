@@ -3,12 +3,14 @@ using Xamarin.Essentials;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using PushR.Views;
+using System.Linq;
 
 namespace PushR.ViewModels
 {
     public class UserListPageVM : ViewModelBase
     {
-        public ObservableCollection<UserModel> UserList { get; set; }
+        public UserModel myModel;
+                public ObservableCollection<UserModel> UserList { get; set; }
         public Command LogoutCmd { get; private set; }
         public UserListPageVM()
         {
@@ -28,7 +30,13 @@ namespace PushR.ViewModels
             UserList.Clear();
 
             var result = await Services.Services.AllUsers();
-            if (result != null) 
+
+            myModel = new UserModel();
+
+            myModel = (UserModel)result.Where(x => x.Id == App.UserId);
+            result.RemoveAll(x => x.Id == App.UserId);
+
+            if (myModel != null) 
             {
                 foreach (var user in result)
                 {
