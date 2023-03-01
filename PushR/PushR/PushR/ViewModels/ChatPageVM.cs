@@ -82,7 +82,7 @@ namespace PushR.ViewModels
                 }
                 catch (Exception ex)
                 {
-                    await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech", "OK");
+                    await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech ", ex.ToString(), "OK");
                 }
             }
             block = false;

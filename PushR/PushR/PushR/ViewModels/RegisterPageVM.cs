@@ -1,7 +1,6 @@
 ﻿using PushR.Models;
 using PushR.Views;
 using System;
-using System.Collections.Generic;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -87,12 +86,19 @@ namespace PushR.ViewModels
             {
                 try
                 {
-                    await SecureStorage.SetAsync("UserId", result);
-                    App.Current.MainPage = new UserListPage();
+                    if (result == null || result == "")
+                    {
+                        await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech", "OK");
+                    }
+                    else
+                    {
+                        await SecureStorage.SetAsync("UserId", result);
+                        App.Current.MainPage = new UserListPage();
+                    }
                 }
                 catch (Exception ex)
                 {
-                    await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech", "OK");
+                    await App.Current.MainPage.DisplayAlert("Error", "er is iets mis, pech", ex.ToString(), "OK");
                 }
             }
             block = false;

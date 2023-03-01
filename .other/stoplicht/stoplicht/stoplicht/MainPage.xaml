@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="stoplicht.MainPage">
+
+    <StackLayout>
+        <Frame
+            x:Name="color"
+            BorderColor="black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="575"
+            WidthRequest="200"
+            CornerRadius="50"
+            Margin="100"
+            Padding="0">
+             <StackLayout>
+                <Frame
+                    BackgroundColor="red"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="95"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Margin="25"
+                    Padding="0"/>
+                <Frame
+                    BackgroundColor="Orange"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="95"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Margin="25"
+                    Padding="0"/>
+                <Frame
+                    BackgroundColor="Green"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="95"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Margin="25,10"
+                    Padding="0"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

@@ -104,5 +104,27 @@ namespace PushR.Services
 
             return result;
         }
+
+        public async static void HandleNotification()
+        {
+
+            var page = App.Current.MainPage;
+            var name = page.GetType().Name;
+
+            Console.WriteLine("NAAAAAAAMMMMEEEEEEE: " + name);
+
+            if(name == "UserListPage")
+            {
+                //reorder userlist
+            }
+            else
+            {
+                //geef melding
+
+
+
+            }
+
+        }
     }
 }

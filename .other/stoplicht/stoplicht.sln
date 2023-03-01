@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stoplicht.Android", "stoplicht\stoplicht.Android\stoplicht.Android.csproj", "{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stoplicht", "stoplicht\stoplicht\stoplicht.csproj", "{C96AF389-180F-4D4C-B4ED-920C9158645B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF9FBBD-BDFE-4C33-A402-0456BFEC982B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96AF389-180F-4D4C-B4ED-920C9158645B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DE100B4-9CBA-40AB-9016-0CED7F5A78AE}
+	EndGlobalSection
+EndGlobal

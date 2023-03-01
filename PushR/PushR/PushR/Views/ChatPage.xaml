@@ -23,9 +23,6 @@
                         Text="back"
                         HeightRequest="40"
                         Command="{Binding BackCmd}"/>
-                    <Label
-                        FontSize="30"
-                        Text="{Binding NickName}"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

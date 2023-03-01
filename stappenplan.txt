@@ -15,3 +15,36 @@ database:
 php script:
 	check of nickname al bestaat
 	insert database
+
+
+
+Iemand stuurt jou bericht:
+
+	App is gesloten:
+		Krijgt melding:
+			Als je op de melding klikt opent die userlistpage.
+
+	App is open -> userlistpage:
+		User die het bericht heeft gestuurd komt boven aan te staan van de userlist met een melding logotje.
+
+			als je melding krijgt moet je kijken op welke page de user is
+
+	App is open -> chatpage:
+		Krijgt melding:
+			Als je op de melding klikt opent die chatpage van die user.
+			Je kan ook de melding weg swipen of negeren.
+
+
+
+
+
+
+stoplicht application:
+
+	4 frames
+
+	6 kleuren, 1 keer defineren
+
+	rood: 12s
+	oragne: 6s
+	groen: 6s

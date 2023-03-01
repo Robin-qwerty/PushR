@@ -58,6 +58,8 @@ namespace PushR
                 {
                     Console.WriteLine(ex.ToString());
                 }
+
+                Services.Services.HandleNotification();
             };
         }
 

@@ -1,0 +1,15 @@
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.csproj.AssemblyReference.cache
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.AssemblyInfoInputs.cache
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.AssemblyInfo.cs
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\bin\Debug\netstandard2.0\stoplicht.deps.json
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\bin\Debug\netstandard2.0\stoplicht.dll
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\bin\Debug\netstandard2.0\stoplicht.pdb
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\XamlC.stamp
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.dll
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\refint\stoplicht.dll
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\stoplicht.pdb
+C:\xampp\htdocs\PushR\stoplicht\stoplicht\stoplicht\obj\Debug\netstandard2.0\ref\stoplicht.dll

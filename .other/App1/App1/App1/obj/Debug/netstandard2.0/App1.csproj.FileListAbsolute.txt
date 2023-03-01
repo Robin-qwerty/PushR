@@ -1,0 +1,16 @@
+C:\xampp\htdocs\PushR\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\xampp\htdocs\PushR\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\xampp\htdocs\PushR\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.AssemblyReference.cache
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\InfoPage.xaml.g.cs
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\refint\App1.dll
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+C:\xampp\htdocs\PushR\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll

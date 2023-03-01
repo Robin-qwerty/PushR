@@ -31,12 +31,7 @@ namespace PushR.ViewModels
 
             var result = await Services.Services.AllUsers();
 
-            myModel = new UserModel();
-
-            myModel = (UserModel)result.Where(x => x.Id == App.UserId);
-            result.RemoveAll(x => x.Id == App.UserId);
-
-            if (myModel != null) 
+            if (result != null) 
             {
                 foreach (var user in result)
                 {
