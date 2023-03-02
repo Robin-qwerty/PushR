@@ -6,7 +6,8 @@ namespace stoplicht
 {
     public class SchemaModel
     {
-        public int time { get; set; }
-        public string color { get; set; }
+        public string Red { get; set; }
+        public string Orange { get; set; }
+        public string Green { get; set; }
     }
 }

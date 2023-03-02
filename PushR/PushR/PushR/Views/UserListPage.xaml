@@ -5,10 +5,24 @@
 
 
     <StackLayout>
-        <Button
-            Text="Logout"
-            Margin="100,25"
-            Command="{Binding LogoutCmd}"/>
+        <StackLayout
+            Orientation="Horizontal"
+            Margin="10">
+            <Label
+                x:Name="notification"
+                FontFamily="Solid"
+                FontSize="30"
+                VerticalOptions="Center"
+                HorizontalOptions="EndAndExpand"
+                Text="&#xf0f3;"/>
+            <Button
+                FontFamily="Solid"
+                FontSize="25"
+                Text="&#xf2f5;"
+                Margin="0"
+                HorizontalOptions="EndAndExpand"
+                Command="{Binding LogoutCmd}"/>
+        </StackLayout>
         <Frame
             BorderColor="White"
             BackgroundColor="Transparent"
@@ -24,10 +38,19 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label
-                                FontSize="30"
-                                Text="{Binding NickName}">
-                            </Label>
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Label
+                                    x:Name="notification"
+                                    FontFamily="Solid"
+                                    FontSize="20"
+                                    VerticalOptions="Center"
+                                    Text="&#xe461;  | "/>
+                                <Label
+                                    FontSize="30"
+                                    Text="{Binding NickName}">
+                                </Label>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

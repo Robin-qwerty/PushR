@@ -5,8 +5,7 @@
 
     <StackLayout>
         <Frame
-            x:Name="color"
-            BorderColor="black"
+            BackgroundColor="black"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             HeightRequest="575"
@@ -16,7 +15,8 @@
             Padding="0">
              <StackLayout>
                 <Frame
-                    BackgroundColor="red"
+                    x:Name="red"
+                    BackgroundColor="#ff0000"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     CornerRadius="95"
@@ -25,7 +25,8 @@
                     Margin="25"
                     Padding="0"/>
                 <Frame
-                    BackgroundColor="Orange"
+                    x:Name="orange"
+                    BackgroundColor="#5e2f08"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     CornerRadius="95"
@@ -34,7 +35,8 @@
                     Margin="25"
                     Padding="0"/>
                 <Frame
-                    BackgroundColor="Green"
+                    x:Name="green"
+                    BackgroundColor="#0f3d0f"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     CornerRadius="95"

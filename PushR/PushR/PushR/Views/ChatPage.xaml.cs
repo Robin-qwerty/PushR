@@ -20,6 +20,13 @@ namespace PushR.Views
             viewModel.GetData();
 
             BindingContext = viewModel;
+
+
+            MessagingCenter.Subscribe<ChatPage, string>(this, "Hi", async (sender, arg) =>
+            {
+                await DisplayAlert("Message received", "arg=" + arg, "OK");
+            });
+
         }
 	}
 }

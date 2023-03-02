@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I1qRHm/jJu7Oq2zjt6cGu5UYVvW03s7IPFrRr+kLQJf9G4uZWIQetoSRDGMIL6gstAjY5hvz8RxjM+UpUN4NTQ==",
+  "dgSpecHash": "rwH3pW2+h10pzsGYOnaYrSjX/UZtGNdRuD93dNftfoYz1UY+vGt4PADq2n8evB/bLZ/lI9L1DAT2DMMCtC1QTg==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\robin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\robin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

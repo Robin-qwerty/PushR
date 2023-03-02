@@ -179,7 +179,7 @@
 			$fields['registration_ids'] = $arr;
 			$fields['notification'] = $data;
 			$fields['priority'] = 'high';
-			$fields['data'] = $payload;
+			//$fields['data'] = $payload;
 			//header with content_type api key
 			$headers = array(
 				'Content-Type:application/json',

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj": {}
+    "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj": {
+    "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
         "projectName": "stoplicht",
-        "projectPath": "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
+        "projectPath": "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\stoplicht.csproj",
         "packagesPath": "C:\\Users\\robin\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

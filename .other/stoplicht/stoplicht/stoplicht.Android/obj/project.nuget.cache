@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/IhDGdj/nHAM9kumdxeVshU4YqT1xg1hlOmm+y/g4Upbb1k6gOi/g5f45eZnCYsF6kVVJCP2bRgmz89534raQQ==",
+  "dgSpecHash": "C80+4Kq6Ft0dAbLJ6RgtBUiAagK0W8W5brX+sb9AyfU9rvvjd1GxiR6M83Fx1WoTXqXeSDGtKcEKLt3KY1VefA==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\PushR\\stoplicht\\stoplicht\\stoplicht.Android\\stoplicht.Android.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\PushR\\.other\\stoplicht\\stoplicht\\stoplicht.Android\\stoplicht.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\robin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\robin\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

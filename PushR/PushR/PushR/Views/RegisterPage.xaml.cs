@@ -1,5 +1,6 @@
 ﻿using PushR.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace PushR.Views
@@ -10,6 +11,7 @@ namespace PushR.Views
         RegisterPageVM viewModel;
         public RegisterPage()
         {
+            Xamarin.Forms.Application.Current.On<Xamarin.Forms.PlatformConfiguration.Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
             InitializeComponent();
             viewModel = new RegisterPageVM();
             BindingContext = viewModel;

@@ -20,9 +20,18 @@
                     Grid.Row="1"
                     Orientation="Horizontal">
                     <Button
-                        Text="back"
-                        HeightRequest="40"
+                        FontFamily="Solid"
+                        FontSize="25"
+                        Text="&#xe2e1;"
+                        HeightRequest="50"
                         Command="{Binding BackCmd}"/>
+                    <Label
+                        x:Name="notification"
+                        FontFamily="Solid"
+                        FontSize="30"
+                        VerticalOptions="Center"
+                        HorizontalOptions="EndAndExpand"
+                        Text="&#xf0f3;"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
@@ -48,17 +57,17 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
                                     <Frame
-                                        CornerRadius="30"
+                                        CornerRadius="20"
                                         Grid.Column="0"
                                         HorizontalOptions="{Binding From_Id, Converter={StaticResource IdToAlignmentConverterKey}}"
                                         HasShadow="True"
-                                        Margin="0"
+                                        Margin="2"
                                         BackgroundColor="{Binding From_Id, Converter={StaticResource IdToBackgroundColerKey}}"
                                         Padding="5"
                                         MinimumWidthRequest="20">
                                         <Label
                                             Text="{Binding Message}"
-                                            Margin="10"
+                                            Margin="8"
                                             TextColor="White"
                                             LineBreakMode="WordWrap"/>
                                     </Frame>
@@ -78,7 +87,11 @@
                 HorizontalOptions="FillAndExpand"
                 Placeholder="Message"/>
             <Button
-                Text="Send"
+                FontFamily="Solid"
+                FontSize="25"
+                CornerRadius="95"
+                WidthRequest="60"
+                Text="&#xe20a;"
                 Command="{Binding SendMessageCmd}"/>
         </StackLayout>
     </Grid>

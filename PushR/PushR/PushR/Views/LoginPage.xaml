@@ -2,10 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PushR.Views.LoginPage">
+    
     <StackLayout 
         Margin="10,20,10,70"
         Padding="10"
         VerticalOptions="Center">
+        <Frame
+            VerticalOptions="StartAndExpand"
+            HorizontalOptions="Center"
+            BackgroundColor="Transparent">
+            <Label
+                FontFamily="Solid"
+                FontSize="50"
+                VerticalOptions="Center"
+                Text="&#xf0c0;"/>
+        </Frame>
         <Entry
             Text="{Binding NickName}"
             Keyboard="Text"

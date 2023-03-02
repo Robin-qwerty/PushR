@@ -1,9 +1,11 @@
 ﻿using Plugin.FirebasePushNotification;
 using PushR.Views;
 using System;
+using PushR.Util;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Android.Provider.ContactsContract.CommonDataKinds;
 
 namespace PushR
 {
@@ -11,6 +13,7 @@ namespace PushR
     {
         public bool HasId;
         public static string UserId;
+
 
         public App()
         {
@@ -53,6 +56,14 @@ namespace PushR
                 try
                 {
                     var v = p.Data;
+
+                    var Body = p.Data["body"].ToString();
+                    var NickName = p.Data["NickName"].ToString();
+
+                    MessageRelay messageRelay = new MessageRelay();
+
+                    messageRelay.Relay(Body, NickName);
+
                 }
                 catch (Exception ex)
                 {
