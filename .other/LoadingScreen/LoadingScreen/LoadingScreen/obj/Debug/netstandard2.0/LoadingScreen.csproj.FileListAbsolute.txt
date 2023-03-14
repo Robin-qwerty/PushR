@@ -1,0 +1,17 @@
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\bin\Debug\netstandard2.0\LoadingScreen.deps.json
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\bin\Debug\netstandard2.0\LoadingScreen.dll
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\bin\Debug\netstandard2.0\LoadingScreen.pdb
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.csproj.AssemblyReference.cache
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\BottomMenu.xaml.g.cs
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.AssemblyInfoInputs.cache
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.AssemblyInfo.cs
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\XamlC.stamp
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.dll
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\refint\LoadingScreen.dll
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\LoadingScreen.pdb
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\ref\LoadingScreen.dll
+C:\xampp\htdocs\PushR\.other\LoadingScreen\LoadingScreen\LoadingScreen\obj\Debug\netstandard2.0\BusyIndicator.xaml.g.cs

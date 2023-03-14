@@ -36,9 +36,6 @@ Iemand stuurt jou bericht:
 
 
 
-
-
-
 stoplicht application:
 
 	4 frames
@@ -48,3 +45,14 @@ stoplicht application:
 	rood: 12s
 	oragne: 6s
 	groen: 6s
+
+
+
+menu:
+	een menu met een aantal knoppen met maximaal 3 knoppen naast elkaar.
+	kijken hoeveel knoppen je hebt en hoeveel er op een rij mogen en bereken je hoeveel kolommen je nodig hebt en zet daar alle knoppen in.
+
+		maakt een grid waar alle knoppen in komen te staan.
+		maakt een int met het aantal knoppen.
+		een loop waar het maximaal aantal knoppen naast elkaar gezet word.
+		dan gebruik je een if om het overgebleven knoppen er onder te zetten tot alle knoppen in het menu staan.

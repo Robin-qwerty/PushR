@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Menu
 {
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class MainPage : ContentPage
+	{
+
+		public MainPage ()
+		{
+			InitializeComponent ();
+			
+			Menu menu = new Menu (7, 3);
+			TopMenu topMenu = new TopMenu ();
+
+			topMenu.SetTitle("Hello world!");
+
+			bottom.Children.Add(menu);
+			top.Children.Add(topMenu);
+		}
+	}
 }
