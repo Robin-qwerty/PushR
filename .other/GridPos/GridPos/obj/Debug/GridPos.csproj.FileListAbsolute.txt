@@ -1,0 +1,8 @@
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\obj\Debug\GridPos.csproj.AssemblyReference.cache
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\obj\Debug\GridPos.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\obj\Debug\GridPos.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\bin\Debug\GridPos.exe.config
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\bin\Debug\GridPos.exe
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\bin\Debug\GridPos.pdb
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\obj\Debug\GridPos.exe
+C:\xampp\htdocs\PushR\.other\GridPos\GridPos\obj\Debug\GridPos.pdb
